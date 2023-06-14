@@ -37,6 +37,7 @@ public class ArithmeticsExercises1AppMain {
                 operations.taxJanuary, operations.taxFebruary);
 
     }
+
     /*
     calculateOperations function calls a variety of other functions to do the arithmatic operations.
     @param salary January, salaryFebruary, taxJanuary, taxFebruary inserted by the user and provided by
@@ -81,18 +82,50 @@ public class ArithmeticsExercises1AppMain {
         return salaryJanuary + salaryFebruary;
     }
 
+    /*
+    accumulatedTax makes an addition of two received values and returns it
+    @param taxJanuary, taxFebruary provided by calculateOperations function, inserted by the user.
+    @return is the result of the addition between the two given values.
+    @author Anette Larios
+    @since 14.06.2023
+     */
     public static double accumulatedTax(double taxJanuary, double taxFebruary){
         return taxJanuary + taxFebruary;
     }
-
+    /*
+    earning function makes a subtraction between two given values and returns it.
+    @param salaryJanuary, salaryFebruary provided by calculateOperations function and inserted by the user.
+    @return is the result of salaryFebruary minus SalaryJanuary
+    @author Anette Larios
+    @since 14.06.2023
+     */
     public static int earnings(int salaryJanuary, int salaryFebruary){
         return salaryFebruary - salaryJanuary;
     }
 
+    /*
+    estimatedAnnualSalary makes an addition between the two given values provided by calculateOperations function and
+    inserted by the user.
+    @param salaryJanuary, salary February. The function calculates the average between this two values and
+    use it to calculate the estimatedAnnualSalary multiplying it by twelve.
+    @return is the result of averagePerMonth multiplied by 12.
+    @author Anette Larios
+    @since 14.06.2023
+     */
     public static float estimatedAnnualSalary(int salaryJanuary, int salaryFebruary){
         float averagePerMonth = ( (float) salaryJanuary + (float) salaryFebruary) / 2 ;
         return averagePerMonth * 12;
     }
+
+    /*
+    printCalculation concatenates the messages to show the results and the results in themselves into a String and
+    prints it.
+    @param accumulatedSalary, accumulatedTax, earnings, estimatedAnnualSalary, distributedMoneyPerInhabitantJanuary,
+    leftOverMoneyAfterDistributionJanuary, distributedMoneyPerInhabitantFebruary, and
+    leftOverMoneyAfterDistributionFebruary are provided as the return of the functions showed before.
+    @author Anette Larios
+    @since 14.06.2023
+     */
 
     public static void printCalculations(int accumulatedSalary, double accumulatedTax, int earnings,
                                          float estimatedAnnualSalary, float distributedMoneyPerInhabitantJanuary,
