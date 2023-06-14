@@ -1,7 +1,6 @@
 package ArithmeticExercises1;
 import ArithmeticExercises1.MathUtils.MathUtils;
 import ArithmeticExercises1.models.BudgetEmployee;
-
 import java.util.Scanner;
 /*
 This is a simple program example of how to use arithmetic operators in Java.
